@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <canvas id="canvas"></canvas>
+  <div>
+    <span>
+      Number of elements:
+    </span>
+    <label>
+      <input type="number" id="element-count">
+    </label>
+  </div>
+  <div>
+    <span>
+      Sorting Algorithm:
+    </span>
+    <label>
+      <select id="algorithm">
+        <option value="bubble">Bubble</option>
+        <option value="selection">Selection</option>
+        <option value="insertion">Insertion</option>
+        <option value="merge">Merge</option>
+        <option value="quick-random">Quick - Random</option>
+        <option value="quick-mom">Quick - MoM Select</option>
+      </select>
+    </label>
+  </div>
+  <div>
+    <label>
+      <button id="decrease-speed"> - </button>
+    </label>
+    <span id="speed-display">
+      Speed: 10
+    </span>
+    <label>
+      <button id="increase-speed"> + </button>
+    </label>
+  </div>
+  <div>
+    <button id="start">Start</button>
+  </div>
+  <div>
+    <button id="reset">Reset</button>
+  </div>
+  <div>
+    <span id="stats-span">Stats: - </span>
+  </div>
+  <script src="js/app.js" onload="onLoad()"></script>
+
+</body>
+
+</html>
